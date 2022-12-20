@@ -94,7 +94,16 @@
 								                <h4>Implementation Third Part - Handle Collision</h4>
 								                <p>In the beginning, I was quite confused about how to handle the collision because I think that if a ball collided with another one, it would not only produce the force. As the picture is shown on the whiteboard, I discussed with my friends how to calculate collision.</p>
 								                <a href="#" class="image fit"><img src="images/pic-3-0-3.jpg" alt="" /></a>
+								                <p>Collision between cloth and spheres:</p>
+								                <ul>
+											<li>Step 1 - Get the position between two objects and the length of objects.</li>
+											<li>Step 2 - Detect whether the objects collide or not.</li>
+											<li>Step 3 - Calculate the normal vector of two objects through formula.</li>
+											<li>Step 4 - Use this collision formula to compute the acceleration.</li>
+											<li>Step 5 - Update the current acceleration and position..</li>
+										</ul>
 								                <h4>Implementation Forth Part - Integrator</h4>
+								                <p>I think this part is the most challenging part, you can not only follow the formula , but also need to design the correct p to get the correct data from the function.</p>
 								                <h5>Explicit Euler</h5>
 								                </br>
 								                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe width='560' height='315' src='https://www.youtube.com/embed/xyXa1d6p80s?rel=0' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>
