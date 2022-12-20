@@ -76,8 +76,12 @@
 								                <p>structural</p>
 								                <p>As the picture show, the horizontal structural spring is using the left point to connect its right-side point, and when the column index is particlePerlength - 1, stopping connecting the point because there didn’t exist any point on its right side. And the horizontal structural spring is similar to the horizontal structural spring, but its direction is different.</p>
 								                <p>shear</p>
+								                <p>Shear Spring has two different direction of spring, upper-left to lower-right and upper-right to lower-left. Point connects its lower-right point and when the column index is particlePerlength - 1, stopping connecting the point. And the other one is connecting to lower-left point and  stopping connecting when the row index is particlePerlength -1.</p>
+								                <p>bend</p>
+								                <p>It is similar to structural springs, the special part that is different from the structural spring is the length of spring. Its length doubles the distance of structural and crosses between the two points.</p>
 								                <h4>Implementation Second Part - Compute spring and damper forces</h4>
-								                <p></p>
+								                <p>This part can be easily done because we can reference the slides on the course. I just follow the formula on the slides and implement them and divide the implementation into six parts.</p>
+								                <p>Step 1  - Read the start and end index</p>
 								                <h4>Implementation Third Part - Handle Collision</h4>
 								                <p></p>
 								                <h4>Implementation Forth Part - Integrator</h4>
