@@ -82,11 +82,18 @@
 								                <h4>Implementation Second Part - Compute spring and damper forces</h4>
 								                <p>This part can be easily done because we can reference the slides on the course. I just follow the formula on the slides and implement them and divide the implementation into six parts.</p>
 								                <a href="#" class="image fit"><img src="images/pic-3-0-2.jpg" alt="" /></a>
-								                <a href="#" class="image fit"><img src="images/pic-3-0-3.jpg" alt="" /></a>
 								                <h4>Step 1  - Read the start and end index</h4>
 								                <p>Using the data structure of spring to get the index of start and the end. Next, we can use the index to acquire other data of the spring.</p>
+								                <h4>Step 2 - Calculated the spring force</h4>
+								                <p>alculated the n-ary forces and I focused on spring forces calculation and just followed the formula on the course slides and programing the matrix operations in this step.</p>
+								                <h4>Step 4 - Calculated the acceleration by combining the spring force and damper force</h4>
+								                <p>This step combines two forces we got in Step2 and Step 3. and compute the acceleration and velocity.</p>
+								                <h4>Step 5 - Repeat the Step 1 to Step 4 for the other object</h4>
+										<p>This step just follows Step 1 to Step 4 because the direction of forces is different on two objects.</p>
+										<h4>Step 6 - Update the acceleration and velocity</h4>
 								                <h4>Implementation Third Part - Handle Collision</h4>
-								                <p></p>
+								                <p>In the beginning, I was quite confused about how to handle the collision because I think that if a ball collided with another one, it would not only produce the force. As the picture is shown on the whiteboard, I discussed with my friends how to calculate collision.</p>
+								                <a href="#" class="image fit"><img src="images/pic-3-0-3.jpg" alt="" /></a>
 								                <h4>Implementation Forth Part - Integrator</h4>
 								                <h5>Explicit Euler</h5>
 								                </br>
