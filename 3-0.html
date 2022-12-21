@@ -84,6 +84,7 @@
 										<h4>Implementation Second Part - Compute spring and damper forces</h4>
 								                <p>This part can be easily done because we can reference the slides on the course. I just follow the formula on the slides and implement them and divide the implementation into six parts.</p>
 								                <a href="#" class="image fit"><img src="images/pic-3-0-2.jpg" alt="" /></a>
+								                <a href="#" class="image fit"><img src="images/pic-3-0-5.jpg" alt="" /></a>
 								                <ul>
 								                        <li><h5>Step 1  - Read the start and end index</h5></li>
 								                        <p>Using the data structure of spring to get the index of start and the end. Next, we can use the index to acquire other data of the spring.</p>
@@ -109,6 +110,8 @@
 										</ul>
 								                <h4>Implementation Forth Part - Integrator</h4>
 								                <p>I think this part is the most challenging part, you can not only follow the formula , but also need to design the correct p to get the correct data from the function.</p>
+								                <a href="#" class="image fit"><img src="images/pic-3-0-6.jpg" alt="" /></a>
+								                <a href="#" class="image fit"><img src="images/pic-3-0-7.jpg" alt="" /></a>
 								                <h5>A. Explicit Euler</h5>
 								                <ul>
 											<li>Step 1 - Get the position, velocity and acceleration of the particles.</li>
@@ -120,7 +123,7 @@
 											<li>Step 1 - Get the position, velocity and acceleration of the particles after delta time by simulateOneStep function.</li>
 											<li>Step 2 - Follow the formula, Xn+1 = Xn + h * X’n+1  ( h is delta time).</li>
 											<li>Step 3 - Update the position and velocity.</li>
-								                </br>
+								                </ul>
 								                <h5>C. Midpoint Euler</h5>
 								                <h5>D. Rune Kutta Fourth</h5>
 								                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe width='560' height='315' src='https://www.youtube.com/embed/xyXa1d6p80s?rel=0' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>
@@ -130,8 +133,10 @@
 										<h4>Introduction</h4>
 										<p>This is mainly about what is forward kinematics and basic knowledge of acclaim format. Implement a simple HumanModel with C++ programming. Besides, we also implemented the motion and discussed the concept of kinematics. It’s special that this is my first time programming body skeleton animation, however, everything is quite cool for me. Although I faced some challenges during the writing process, I overcame a lot of parts that took a long time to debug. To sum up, I think that it’s an interesting work and I finished it smoothly.</p>
 										<h4>Fundamentals</h4>
+							                        <a href="#" class="image fit"><img src="images/pic-3-0-8.jpg" alt="" /></a>
 						                                <p>I think this part is the most challenging part, you can not only follow the formula , but also need to design the correct p to get the correct data from the function.</p>
 							                        <h4>Implementation First Part - ForwardKinematics</h4>
+							                        <a href="#" class="image fit"><img src="images/pic-3-0-9.jpg" alt="" /></a>
 							                        <ul>
 											<li><h5>The first step:</h5></li>
 											<p>Using a BFS to traverse the whole skeleton. I use a queue to store the bone which I traversed. “discovered” vector was used as a recorder to record which bone shouldn’t be processed again.</p>
@@ -144,6 +149,7 @@
 											<p>Continuously the while loop until all the bones were visited and deleted.</p>
 										</ul>
 							                        <h4>Implementation Second Part - motionWarp</h4>
+							                        <a href="#" class="image fit"><img src="images/pic-3-0-10.jpg" alt="" /></a>
 							                        <p>The first part is to deal with the new keyframe value, due to the change in the number of frames.</p>
 							                        <p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus.</p>
 							                        <ul>
