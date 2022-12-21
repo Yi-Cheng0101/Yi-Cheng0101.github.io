@@ -134,7 +134,7 @@
 										<p>This is mainly about what is forward kinematics and basic knowledge of acclaim format. Implement a simple HumanModel with C++ programming. Besides, we also implemented the motion and discussed the concept of kinematics. It’s special that this is my first time programming body skeleton animation, however, everything is quite cool for me. Although I faced some challenges during the writing process, I overcame a lot of parts that took a long time to debug. To sum up, I think that it’s an interesting work and I finished it smoothly.</p>
 										<h4>Fundamentals</h4>
 							                        <a href="#" class="image fit"><img src="images/pic-3-0-8.jpg" alt="" /></a>
-						                                <p>I think this part is the most challenging part, you can not only follow the formula , but also need to design the correct p to get the correct data from the function.</p>
+						                                <p>First, I need to know the fundamental knowledge, such as the rotation, translation, amc and asf files. Only when I understood the framework of the whole project, can I realized what should I do in this homework. So, I spend a lot of time thoroughly absorbing the concepts on the course slides. Moreover, I tried to derive the mathematical formula. There are some notes I tried to deviate the formula and let myself understand the whole concept. Especially, the rotation part which let me spent a lot of time learning it.</p>
 							                        <h4>Implementation First Part - ForwardKinematics</h4>
 							                        <a href="#" class="image fit"><img src="images/pic-3-0-9.jpg" alt="" /></a>
 							                        <ul>
@@ -150,9 +150,8 @@
 										</ul>
 							                        <h4>Implementation Second Part - motionWarp</h4>
 							                        <a href="#" class="image fit"><img src="images/pic-3-0-10.jpg" alt="" /></a>
-							                        <p>The first part is to deal with the new keyframe value, due to the change in the number of frames.</p>
-							                        <p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus.</p>
 							                        <ul>
+										        <li>The first part is to deal with the new keyframe value, due to the change in the number of frames.</li>
 											<li>The second part is very simple, we just update the value of the translation and the rotation. Then, this part can be done with simple math concepts. Translation part, I used the ratio of the linear interpolation. Rotation part, I used the Eigen::Quaternionf slerp() function to implement.</li>
 											<li>The final part is the same as the first part, the difference between them is the ratio of new Keyframe to oldKeyframe.</li>
 										</ul>
