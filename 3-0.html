@@ -131,16 +131,17 @@
 										<p>This is mainly about what is forward kinematics and basic knowledge of acclaim format. Implement a simple HumanModel with C++ programming. Besides, we also implemented the motion and discussed the concept of kinematics. It’s special that this is my first time programming body skeleton animation, however, everything is quite cool for me. Although I faced some challenges during the writing process, I overcame a lot of parts that took a long time to debug. To sum up, I think that it’s an interesting work and I finished it smoothly.</p>
 										<h4>Fundamentals</h4>
 						                                <p>I think this part is the most challenging part, you can not only follow the formula , but also need to design the correct p to get the correct data from the function.</p>
-						                                <h4>Implementation</h4>
 							                        <h4>Implementation First Part - ForwardKinematics</h4>
 							                        <ul>
 											<li><h5>The first step:</h5></li>
 											<p>Using a BFS to traverse the whole skeleton. I use a queue to store the bone which I traversed. “discovered” vector was used as a recorder to record which bone shouldn’t be processed again.</p>
 											<li><h5>The second step:</h5></li>
 											<p>Initializing the root bone, which is different from the other bones because the root bone doesn’t have parent and rotation, I just use the default value.</p>
-											<li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-											<li>Blandit massa non blandit tempor interdum.</li>
-											<li>Lacinia mattis arcu nascetur lobortis.</li>
+											<li><h5>The third step:</h5></li>
+											<p>This step is to deal with the child bone of the parent, if a parent has a  child,	we need to record the child as a visited bone and update the rotation and position value of the child.</p>
+											<li><h5>The fourth step:</h5></li>
+											<p>This step is to deal with the spring bone of the parent, if the child has a sibling, we need to check whether this sibling is a visited bone or not, if we haven’t visited the sibling, we need to update the rotation and position value of the sibling.</p>
+											<p>Continuously the while loop until all the bones were visited and deleted.</p>
 										</ul>
 							                        <h4>Implementation Second Part - motionWarp</h4>
 							                        <p>The first part is to deal with the new keyframe value, due to the change in the number of frames.</p>
