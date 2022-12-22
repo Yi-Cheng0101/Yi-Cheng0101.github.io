@@ -85,6 +85,12 @@ ed by HTML5 UP
 											<li>After cloud node continuously receives new data and retrains model to deploy, which forms a Cloud-edge ML Pipeline.</li>
 											<li>By Kubernetes cloud orchestration and Docker virtual environment, edge devices could scale without system restrictions.</li>
 										</ul>
+										<h3>Data Collection</h3>
+										<p>The source of data is the pictures taken by the edge devices, and the pictures are automatically uploaded to the edge by the system architecture designed in this project. These images can be used as training data for training a model.</p>
+										<h3>Training Model</h3>
+										<p>The source of training data is the images collected from the edge device. Validation set - In the context of this project, the model is trained not only once. Therefore, when we have trained the model K times, we need to use validation data to select the best performing model before evaluating its performance using testing data. The evaluation metrics for this project are accuracy, f1-score, val_acc, and val_loss. After a certain number of images are collected in the cloud, we can start training the model. This project uses the training set to train the top layer of the Xception model, sets 3 epochs, and uses the validation set and evaluation metrics to leave the best-performing model.</p>
+										<h3>Deployment</h3>
+										<p>This AIoT platform can be deployed automatically, because it uses container technology, it is not limited to a single operating environment, and it is convenient not to belong to various peripheral devices, in addition to scheduling to select the services you need to schedule container has a high degree of flexibility.</p>
 										<a href="#" class="image fit"><img src="images/pic4-0.jpg" alt="" /></a>
 										<a href="#" class="image fit"><img src="images/four-0.jpg" alt="" /></a>
 										<a href="#" class="image fit"><img src="images/four-1.jpg" alt="" /></a>
