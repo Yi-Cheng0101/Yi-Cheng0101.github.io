@@ -1,29 +1,54 @@
-/* Basic reset for styling */
-body, h1, p, nav, ul, li {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Styling the header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+    width: 100%;
+    background: #f8f8f8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Main content styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
 main {
-    padding: 20px;
-    background-color: #f4f4f4;
-    min-height: 80vh;  /* Adjust height as needed */
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 80%;
+    align-items: flex-start;
 }
 
-/* Footer styling */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+main img {
+    width: 250px;
+    height: auto;
+    margin-left: 20px;
 }
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    width: 100%;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+footer a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
