@@ -38,17 +38,22 @@ main img {
     margin-left: 20px;
 }
 
-footer {
-    margin-top: auto;
-    padding: 20px;
-    width: 100%;
-    background: #f8f8f8;
-    text-align: center;
+.site-footer {
+    padding: 10px 20px; /* Reduced padding */
+    font-size: 0.8em; /* Smaller text */
 }
 
-footer a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: #333;
+.site-footer .social, .site-footer .footer-text {
+    margin-bottom: 0; /* Less space between elements */
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline; /* Makes list horizontal */
+    margin-right: 10px; /* Space between icons */
+}
