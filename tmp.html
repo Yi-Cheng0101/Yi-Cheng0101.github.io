@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Play Video</title>
+    <style>
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .photo {
+            display: block;
+            width: 300px; 
+            height: auto;
+        }
+
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px; 
+            height: auto;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/images/simulation2.jpg" alt="Photo" class="photo">
+        <video src="/videos/simulation2.mp4" class="video" muted></video>
+    </div>
+
+    <script>
+        const photo = document.querySelector('.photo');
+        const video = document.querySelector('.video');
+
+        photo.addEventListener('mouseover', () => {
+            video.style.display = 'block';
+            video.play();
+        });
+
+        photo.addEventListener('mouseout', () => {
+            video.style.display = 'none';
+            video.pause();
+            video.currentTime = 0; // 重置影片播放位置
+        });
+    </script>
+</body>
+</html>
