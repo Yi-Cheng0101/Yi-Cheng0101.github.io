@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedural Object Look Development</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .social-links a {
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .project {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .skills, .tools, .learnings, .responsibilities {
+            margin: 20px 0;
+        }
+
+        .skills ul, .tools ul, .learnings ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .thumbnail-container img {
+            width: 100px;
+            height: 100px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .workflow, .simulation {
+            margin: 40px 0;
+        }
+
+        .workflow-diagram img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .button:hover {
+            opacity: 1;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .close {
+            top: 10px;
+            right: 10px;
+            transform: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </nav>
+        <h1>Park Yeun</h1>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="project">
+            <h2>Procedural Object Look Development</h2>
+            <p>The goal of this project was to create realistic materials using a procedural Houdini workflow. I found a detailed bag on a second-hand seller website, showcasing signs of aging and use in real life. I was intrigued by these surface imperfections and started to recreate the backpack with meticulous attention to detail, aiming for a 1:1 replication.</p>
+            
+            <div class="image-container">
+                <img src="image1.jpg" alt="Backpack" onclick="openLightbox(0)">
+                <div class="skills">
+                    <h3>Skills:</h3>
+                    <ul>
+                        <li>Fabric Simulation</li>
+                        <li>Procedural asset creation</li>
+                        <li>Surfacing</li>
+                        <li>Fabric grooming</li>
+                    </ul>
+                </div>
+                <div class="tools">
+                    <h3>Tools:</h3>
+                    <ul>
+                        <li>Maya</li>
+                        <li>Houdini</li>
+                        <li>Vex (C-based language)</li>
+                        <li>Substance Painter</li>
+                        <li>Vray</li>
+                        <li>ZBrush</li>
+                    </ul>
+                </div>
+                <div class="learnings">
+                    <h3>What I learned:</h3>
+                    <ul>
+                        <li>Utilized a method to separate scanned fabric data into warp and weft and utilize them as textures by assigning them to different RGB channels.</li>
+                        <li>Developed a procedural embroidery asset using the Houdini workflow.</li>
+                        <li>Replicated aged leather textures using custom brushes in Substance Painter.</li>
+                        <li>Acquired knowledge of the USD pipeline to create instances of assets and manage version control.</li>
+                    </ul>
+                </div>
+                <div class="responsibilities">
+                    <h3>Responsible for:</h3>
+                    <p>3D modeling (Only Patches, Leather trim for bag’s rim, Candy cane rope, and Embroidery asset), Fabric simulation, Procedural asset creation, Surfacing, and Fabric grooming.</p>
+                </div>
+            </div>
+            
+            <div class="thumbnail-container">
+                <img src="image1.jpg" alt="Thumbnail 1" onclick="openLightbox(0)">
+                <img src="image2.jpg" alt="Thumbnail 2" onclick="openLightbox(1)">
+                <img src="image3.jpg" alt="Thumbnail 3" onclick="openLightbox(2)">
+                <img src="image4.jpg" alt="Thumbnail 4" onclick="openLightbox(3)">
+                <img src="image5.jpg" alt="Thumbnail 5" onclick="openLightbox(4)">
+            </div>
+
+            <section class="workflow">
+                <h2>Cotton material workflow</h2>
+                <p>Utilized a method to separate scanned fabric data into warp and weft and utilize them as textures by assigning them to different RGB channels.</p>
+                <div class="workflow-diagram">
+                    <img src="workflow1.jpg" alt="Workflow Step 1">
+                    <img src="workflow2.jpg" alt="Workflow Step 2">
+                    <img src="workflow3.jpg" alt="Workflow Step 3">
+                    <img src="workflow4.jpg" alt="Workflow Step 4">
+                </div>
+            </section>
+
+            <section class="simulation">
+                <h2>Thread simulation</h2>
+                <p>To begin, I generated a twisted rope using Houdini and produced a displacement map to accentuate the thread details. Using procedural modeling workflow, I textured the rope’s threads and refined their natural shape using Houdini’s Vellum solver. To achieve a bell-shaped appearance for the rope’s threads, I applied finer Vellum constraints to the top portion of the threads before running the Vellum simulation.</p>
+                <img src="simulation.jpg" alt="Thread Simulation">
+            </section>
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <button class="button close" onclick="closeLightbox()">X</button>
+        <button class="button prev" onclick="changeImage(-1)">&#10094;</button>
+        <img id="lightboxImage" src="">
+        <button class="button next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script>
+        const images = [
+            'image1.jpg',
+            'image2.jpg',
+            'image3.jpg',
+            'image4.jpg',
+            'image5.jpg'
+        ];
+
+        let currentIndex = 0;
+
+        function openLightbox(index) {
+            currentIndex = index;
+            document.getElementById('lightboxImage').src = images[currentIndex];
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            } else if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+            document.getElementById('lightboxImage').src = images[currentIndex];
+        }
+    </script>
+</body>
+</html>
