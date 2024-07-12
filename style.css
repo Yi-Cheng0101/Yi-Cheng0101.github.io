@@ -81,3 +81,28 @@ a.card-link {
     display: block;
 }
 
+/* Hero section background and text alignment */
+.hero-section {
+    height: 100vh;
+    background: url('/images/background.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-section .text-center {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay to improve text visibility */
+    z-index: 1;
+}
+
