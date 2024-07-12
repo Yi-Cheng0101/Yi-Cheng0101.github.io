@@ -57,3 +57,20 @@ ul li {
     display: inline; /* Makes list horizontal */
     margin-right: 10px; /* Space between icons */
 }
+
+/* Add these styles for fixed card sizes */
+.card.fixed-size {
+    width: 18rem;
+    height: 22rem;
+}
+
+.card.fixed-size .card-img-top {
+    height: 10rem;
+    object-fit: cover;
+}
+
+/* Ensure rows have space between them */
+.row.mb-4 {
+    margin-bottom: 20px;
+}
+
