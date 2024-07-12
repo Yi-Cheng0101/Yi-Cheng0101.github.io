@@ -83,7 +83,6 @@ a.card-link {
 
 /* Hero section background and text alignment */
 .hero-section {
-    weight: 200vh;
     height: 100vh;
     background: url('/images/background.jpg') no-repeat center center;
     background-size: cover;
@@ -101,7 +100,7 @@ a.card-link {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 200%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay to improve text visibility */
     z-index: 1;
