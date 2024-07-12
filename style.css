@@ -83,6 +83,7 @@ a.card-link {
 
 /* Hero section background and text alignment */
 .hero-section {
+    weight: 200vh;
     height: 100vh;
     background: url('/images/background.jpg') no-repeat center center;
     background-size: cover;
