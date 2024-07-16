@@ -55,12 +55,12 @@
 
         .image-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
+            gap: 20px;
         }
 
         .image-container img {
-            max-width: 100%;
+            max-width: 150px;
             height: auto;
         }
 
@@ -168,38 +168,40 @@
             
             <div class="image-container">
                 <img src="images/output_4.jpg" alt="Backpack" onclick="openLightbox(0)">
-                <div class="skills">
-                    <h3>Skills:</h3>
-                    <ul>
-                        <li>Fabric Simulation</li>
-                        <li>Procedural asset creation</li>
-                        <li>Surfacing</li>
-                        <li>Fabric grooming</li>
-                    </ul>
-                </div>
-                <div class="tools">
-                    <h3>Tools:</h3>
-                    <ul>
-                        <li>Maya</li>
-                        <li>Houdini</li>
-                        <li>Vex (C-based language)</li>
-                        <li>Substance Painter</li>
-                        <li>Vray</li>
-                        <li>ZBrush</li>
-                    </ul>
-                </div>
-                <div class="learnings">
-                    <h3>What I learned:</h3>
-                    <ul>
-                        <li>Utilized a method to separate scanned fabric data into warp and weft and utilize them as textures by assigning them to different RGB channels.</li>
-                        <li>Developed a procedural embroidery asset using the Houdini workflow.</li>
-                        <li>Replicated aged leather textures using custom brushes in Substance Painter.</li>
-                        <li>Acquired knowledge of the USD pipeline to create instances of assets and manage version control.</li>
-                    </ul>
-                </div>
-                <div class="responsibilities">
-                    <h3>Responsible for:</h3>
-                    <p>3D modeling (Only Patches, Leather trim for bag’s rim, Candy cane rope, and Embroidery asset), Fabric simulation, Procedural asset creation, Surfacing, and Fabric grooming.</p>
+                <div>
+                    <div class="skills">
+                        <h3>Skills:</h3>
+                        <ul>
+                            <li>Fabric Simulation</li>
+                            <li>Procedural asset creation</li>
+                            <li>Surfacing</li>
+                            <li>Fabric grooming</li>
+                        </ul>
+                    </div>
+                    <div class="tools">
+                        <h3>Tools:</h3>
+                        <ul>
+                            <li>Maya</li>
+                            <li>Houdini</li>
+                            <li>Vex (C-based language)</li>
+                            <li>Substance Painter</li>
+                            <li>Vray</li>
+                            <li>ZBrush</li>
+                        </ul>
+                    </div>
+                    <div class="learnings">
+                        <h3>What I learned:</h3>
+                        <ul>
+                            <li>Utilized a method to separate scanned fabric data into warp and weft and utilize them as textures by assigning them to different RGB channels.</li>
+                            <li>Developed a procedural embroidery asset using the Houdini workflow.</li>
+                            <li>Replicated aged leather textures using custom brushes in Substance Painter.</li>
+                            <li>Acquired knowledge of the USD pipeline to create instances of assets and manage version control.</li>
+                        </ul>
+                    </div>
+                    <div class="responsibilities">
+                        <h3>Responsible for:</h3>
+                        <p>3D modeling (Only Patches, Leather trim for bag’s rim, Candy cane rope, and Embroidery asset), Fabric simulation, Procedural asset creation, Surfacing, and Fabric grooming.</p>
+                    </div>
                 </div>
             </div>
             
@@ -270,3 +272,4 @@
     </script>
 </body>
 </html>
+
