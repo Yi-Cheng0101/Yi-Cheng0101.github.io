@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Simulation Demo</title>
+    <style>
+        /* Basic reset for styling consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #fff;
+            color: #000;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .intro-section img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 2px solid #000; /* Add border to the image */
+        }
+
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content-section img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            border: 2px solid #000; /* Add border to the image */
+        }
+
+        .social-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-section img {
+            width: 50px; /* Adjust the size as needed */
+            height: auto;
+            margin: 0 10px;
+        }
+
+        footer {
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            padding: 5px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Yi-Cheng Hsiao</h3>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>C++ Ray Tracing with</h1>
+        <img src="../images/output_4.jpg" alt="Introduction Image" class="intro-image">
+        <div class="button-container">
+            <a href="https://github.com/ParkYeun1/springDamperSystem.git" target="_blank" class="button-module preserve-whitespace--nowrap" rel="noopener noreferrer">Github</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <h2>Polygon Mesh Cutting Tool</h2>
+            <p>
+                Initially, I began by dividing the scalp for tube grooming. My first attempt involved
+                utilizing Topobuild to generate a scalp mesh atop the base scalp mesh for
+                retopologizing purposes. However, I encountered an obstacle in creating split lines for the
+                hair on the human scalp using this method.
+            </p>
+            <p>
+                Consequently, I developed a tool in Houdini to split the mesh based on mouse input,
+                allowing for drawing directly on the mesh. This enabled me to split the scalp mesh
+                according to the reference plan and to create a more detailed mesh for the hair tube
+                model.
+            </p>
+            <img src="../images/output_4.jpg" alt="Polygon Mesh Cutting Tool Image">
+        </section>
+
+        <section class="content-section">
+            <h2>Split scalp - Topobuild node</h2>
+            <img src="path/to/your/image2.png" alt="Split scalp - Topobuild node Image 1">
+            <img src="path/to/your/image3.png" alt="Split scalp - Topobuild node Image 2">
+            <img src="path/to/your/image4.png" alt="Split scalp - Topobuild node Image 3">
+            <img src="path/to/your/image5.png" alt="Split scalp - Topobuild node Image 4">
+        </section>
+
+        <section class="social-section">
+            <img src="path/to/Screenshot 2024-07-16 at 7.11.02 AM.png" alt="Social Media Icons">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Yi-Cheng Hsiao. All rights reserved.</p>
+    </footer>
+</body>
+</html>
