@@ -1,65 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yi-Cheng Hsiao</title>
-    <link rel="stylesheet" href="intro.css">
-</head>
-<body>
-    <header>
-        <div class="nav-container">
-            <a href="#projects" class="back-button">Back to Projects</a>
-            <h1>Yi-Cheng Hsiao</h1>
-        </div>
-    </header>
-    <main>
-        <section id="about">
-            <img src="./images/head_main.jpg" alt="" class="main-image">
-            <div class="content">
-                <h2>About</h2>
-                <p>Hello, my name is Yi-Cheng Hsiao. With a background in software engineering and computer graphics, I specialize in <b>real-time rendering</b>, <b>neural rendering</b>, <b>graphics programming</b>, <b>animation simulation</b>, and <b>3D math<b>. I consistently integrate technology and art to enhance the entertainment experience.</p>
-                
-                <h3>Professional Experience</h3>
-                <p>I previously worked at <b>HTC VIVE</b> as a <b>Graphics Software Engineer</b>. During this time, I researched and developed technologies for real-time streaming and VR rendering applications. One of the projects I engaged in involved developing VBS (VIVE Business Streaming), a streaming software in C++ and DirectX, which enables wireless or VIVE cable streaming of PC VR content from the computer to the VR headset and reduces the heavy rendering workloads.</p>
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-                <p>I was a Research Assistant in the Intelligent Geometric and Visual Computing (IGVC) Lab at Texas A&M University. My focus was on neural rendering and 3D Gaussians Splatting. This project had a strong research orientation, and I utilized 3D Gaussians Splatting techniques and photorealistic representations to generate 3D human avatars.</p>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
 
-                <p>I was also a Research Assistant in the Soft Interaction Lab, developing interactive media art and XR applications. There, I tested Igloo, a 360-degree projector, to visualize an immersive environment project using Unity and Touch Designer, and used Meta Quest3 and Hololens2 to create XR prototypes.</p>
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
 
-                <h3>Academic Background</h3>
-                <p>I am pursuing a Master of Science degree in Visualization from Texas A&M University, specializing in computer graphics. My coursework includes ray tracing, global illumination, real-time rendering, and programming, which has deepened my understanding of real-time rendering and computer graphics. Additionally, my research includes developing a 3D photorealistic Gaussian Splatting Avatar controlNet for single video generation of 3D human avatars and modifying human motion via skeleton controlling.</p>
+header h1 {
+    margin: 0;
+}
 
-                <p>I studied Computer Science at National Tsing Hua University, specializing in computer graphics and high-performance computing. My courses included physically based simulation, graphics programming application, and linear algebra. Moreover, I attended many Student Supercomputer competitions around the world, including ASC, ISC, and HPC-AI.</p>
-            </div>
-        </section>
-    </main>
-    <footer class="site-footer">
-        <div class="social pf-footer-social">
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/yi-cheng-hsiao/" target="_blank">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 24" style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
-                            <path id="path-1_24_" d="M19.6,19v-5.8c0-1.4-0.5-2.4-1.7-2.4c-1,0-1.5,0.7-1.8,1.3C16,12.3,16,12.6,16,13v6h-3.4
-                              c0,0,0.1-9.8,0-10.8H16v1.5c0,0,0,0,0,0h0v0C16.4,9,17.2,7.9,19,7.9c2.3,0,4,1.5,4,4.9V19H19.6z M8.9,6.7L8.9,6.7
-                              C7.7,6.7,7,5.9,7,4.9C7,3.8,7.8,3,8.9,3s1.9,0.8,1.9,1.9C10.9,5.9,10.1,6.7,8.9,6.7z M10.6,19H7.2V8.2h3.4V19z"></path>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:yi-cheng0101@tamu.edu">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 24" style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
-                            <g>
-                                <path d="M15,13L7.1,7.1c0-0.5,0.4-1,1-1h13.8c0.5,0,1,0.4,1,1L15,13z M15,14.8l7.9-5.9v8.1c0,0.5-0.4,1-1,1H8.1c-0.5,0-1-0.4-1-1 V8.8L15,14.8z"></path>
-                            </g>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-text">
-            © 2024 Yi-Cheng Hsiao. All Rights Reserved.
-        </div>
-    </footer>
-</body>
-</html>
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+}
+
+main .content {
+    text-align: left;
+}
+
+main h2 {
+    margin-bottom: 1rem;
+}
+
+main h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-image {
+    width: 120px;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    display: block;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+footer .social ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+footer .social a {
+    color: #fff;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+footer .social a:hover {
+    color: #aaa;
+}
+
+footer .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-text {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}
+
