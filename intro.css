@@ -49,7 +49,8 @@ nav a:hover {
 main {
     padding: 2rem;
     max-width: 800px;
-    text-align: center;
+    text-align: left;
+    width: 100%;
 }
 
 main h2 {
@@ -62,9 +63,9 @@ main h3 {
 }
 
 .main-image {
-    width: 200px;
+    width: 150px;
     height: auto;
-    margin: 0 auto 2rem;
+    margin: 0 0 2rem 0;
     display: block;
     border-radius: 50%;
 }
@@ -97,8 +98,8 @@ footer .social a:hover {
 }
 
 footer .icon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     margin-right: 0.5rem;
 }
 
@@ -106,3 +107,4 @@ footer .icon {
     margin-top: 1rem;
     font-size: 0.875rem;
 }
+
