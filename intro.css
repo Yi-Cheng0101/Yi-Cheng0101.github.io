@@ -46,6 +46,7 @@ main {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 
 main h2 {
@@ -58,8 +59,11 @@ main h3 {
 }
 
 .main-image {
-    width: 100%;
-    margin-top: 2rem;
+    width: 200px;
+    height: auto;
+    margin: 0 auto 2rem;
+    display: block;
+    border-radius: 50%;
 }
 
 footer {
@@ -94,3 +98,4 @@ footer .icon {
     margin-top: 1rem;
     font-size: 0.875rem;
 }
+
