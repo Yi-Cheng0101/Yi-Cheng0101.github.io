@@ -16,12 +16,21 @@
         .hero-section {
             height: 100vh;
             width: 100vw; /* Make the container fill the full viewport width */
-            background: url('head.jpg') no-repeat center center; /* Use the uploaded image */
-            background-size: cover; /* Cover the entire container */
+            background: white;
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .hero-section .background-image {
+            height: 100%;
+            width: calc(100% - 40px); /* Adjust the width to leave a white border */
+            background: url('head.jpg') no-repeat center center; /* Use the uploaded image */
+            background-size: cover; /* Cover the entire container */
+            position: relative;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         .hero-section .text-center {
@@ -76,10 +85,12 @@
 
 <!-- Hero Section -->
 <section id="hero" class="hero-section">
-    <div class="text-center">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is the home of my personal projects and professional endeavors.</p>
-        <a href="#about" class="btn btn-primary">Learn More</a>
+    <div class="background-image">
+        <div class="text-center">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is the home of my personal projects and professional endeavors.</p>
+            <a href="#about" class="btn btn-primary">Learn More</a>
+        </div>
     </div>
 </section>
 
@@ -282,5 +293,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
 
