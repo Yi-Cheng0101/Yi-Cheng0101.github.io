@@ -15,9 +15,13 @@
         /* Hero section background and text alignment */
         .hero-section {
             height: 100vh;
+            width: 100vw; /* Make the container fill the full viewport width */
             background: url('head.jpg') no-repeat center center; /* Use the uploaded image */
-            background-size: 100% auto; /* Make the background image stretch to full width */
+            background-size: cover; /* Cover the entire container */
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .hero-section .text-center {
@@ -35,6 +39,12 @@
             height: 100%;
             background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay to improve text visibility */
             z-index: 1;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
     </style>
 </head>
@@ -65,7 +75,7 @@
 </nav>
 
 <!-- Hero Section -->
-<section id="hero" class="d-flex align-items-center justify-content-center hero-section">
+<section id="hero" class="hero-section">
     <div class="text-center">
         <h1>Welcome to My Portfolio</h1>
         <p>This is the home of my personal projects and professional endeavors.</p>
@@ -272,4 +282,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
